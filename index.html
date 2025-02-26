@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/scr/css/carrinho.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repono</title>
+    <link rel="stylesheet" href="carinho.css">
+</head>
+<body>
+    <!-- cabeçalho-->
+    <header>
+        <!--nav-->
+        <div class="nav container">
+            <a class="logo" href="#"><strong>VT</strong>STORE</a>
+            <!--Icone Carrinho-->
+            <i class='bx bx-shopping-bag' id="carrinho-icone"></i>
+            <!--carrinho-->
+            <div class="carrinho">
+                <h2 class="carrinho-titulo">
+                    Seu Carrinho
+                </h2>
+                <!--Conteudo-->
+                <div class="carrinho-conteudo">
+
+            
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-titulo">Total</div>
+                    <div class="total-preco">R$0.00</div>
+                </div>
+                <!--Botão-->
+                <button type="botao" class="btn-comprar">
+                    Comprar agora
+                </button>
+                <!--Fechar carrinho-->
+                <i class='bx bx-x' id="fechar-carrinho"></i>
+            </div>
+        </div>
+    </header>
+    <!--carrinho-->
+    <section class="shopp container">
+        <h2 class="titulo">
+            produto
+        </h2>
+        <!--Conteudo-->
+        <div class="conteudo-loja">
+            <!--Caixa 1-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/blusa1.png" alt="">
+                <h2 class="produto-titulo">
+                    BLUSA BEGE
+                </h2>
+                <span class="preco">
+                    R$29.99
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 2-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/blusa2.png" alt="">
+                <h2 class="produto-titulo">
+                    BLUSA DEUS GREGO
+                </h2>
+                <span class="preco">
+                    R$30.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 3-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/blusa3.png" alt="">
+                <h2 class="produto-titulo">
+                    BLUSA PRETA LISA
+                </h2>
+                <span class="preco">
+                    R$30.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 4-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/bobojaco.png" alt="">
+                <h2 class="produto-titulo">
+                    bobojaco
+                </h2>
+                <span class="preco">
+                    R$250.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 5-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/calça.jpg" alt="">
+                <h2 class="produto-titulo">
+                    CAMISA
+                </h2>
+                <span class="preco">
+                    R$50.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 6-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/camisa2.jpg" alt="">
+                <h2 class="produto-titulo">
+                    CALÇA
+                </h2>
+                <span class="preco">
+                    R$60.00
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 7-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/conjunto.png" alt="">
+                <h2 class="produto-titulo">
+                    conjunto
+                </h2>
+                <span class="preco">
+                    R$111.99
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+            <!--Caixa 8-->
+            <div class="produto-box">
+                <img class="produto-img" src="imagens/jaqueta.png" alt="">
+                <h2 class="produto-titulo">
+                    JAQUETA
+                </h2>
+                <span class="preco">
+                    R$159.99
+                </span>
+                <i class="bx bx-shopping-bag add-carrinho"></i>
+            </div>
+        </div>
+     
+    </div>
+    </section>
+    <!--Link do JS-->
+    <script src="/scr/js/carrinho.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body> 
+</html>
